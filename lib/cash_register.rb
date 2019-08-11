@@ -33,6 +33,5 @@ end
     end 
     @total 
   end 
-end
   
   end 

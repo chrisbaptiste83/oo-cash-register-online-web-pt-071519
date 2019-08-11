@@ -27,6 +27,10 @@ end
     last_transaction = @transactions.pop 
     @total -= last_transaction[:amount] 
     last_transaction[:quamtity].times do 
-      
+      @items.pop 
+    end 
+    @total 
+  end 
+    
     
  end 

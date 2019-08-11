@@ -23,4 +23,6 @@ else
    "There is no discount to apply."
 end 
  end 
+  def void_last_transaction 
+    last_transaction = @transactions.pop 
  end 

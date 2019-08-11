@@ -17,7 +17,7 @@ class CashRegister
 end 
 
   def apply_discount 
-    if discount > 0 
+    if discount 
   @total = @total - (@discount/100.to_f * @total).to_i
    "After the discount, the total comes to $#{@total}." 
 else 
@@ -26,7 +26,6 @@ end
  end 
  
   def void_last_transaction 
-    
     last_transaction = @transactions.pop 
     @total -= last_transaction[:amount] 
     last_transaction[:quantity].times do 

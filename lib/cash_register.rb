@@ -12,7 +12,7 @@ class CashRegister
   end 
     @total += price * quantity 
   end 
-  @transactions << {quantity: quantity, 
+  @transactions << {quantity: quantity, amount: price*quantity}
   
   def apply_discount 
     if discount 

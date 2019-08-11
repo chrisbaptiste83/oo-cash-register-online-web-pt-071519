@@ -32,5 +32,5 @@ end
     @total 
   end 
     
-    
+  end 
  end 

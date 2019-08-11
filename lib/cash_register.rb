@@ -12,7 +12,6 @@ class CashRegister
     @items << title
   end 
     @total += price * quantity 
-  end 
   @transactions << {
     title: title, quantity: quantity, amount: price * quantity
   }

@@ -25,5 +25,8 @@ end
  end 
   def void_last_transaction 
     last_transaction = @transactions.pop 
-    @total -= last_transaction[;amount]
+    @total -= last_transaction[:amount] 
+    last_transaction[:quamtity].times do 
+      
+    
  end 

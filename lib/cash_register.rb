@@ -14,7 +14,8 @@ class CashRegister
     @total += price * quantity 
   end 
   @transactions << {quantity: quantity, amount: price*quantity}
-  
+end 
+
   def apply_discount 
     if discount 
   @total = @total - (@discount/100.to_f * @total).to_i
